@@ -33,7 +33,38 @@
 
 ## 🚀 セットアップ方法
 
+# 1. リポジトリをダウンロード
+### Git を使う場合 ```bash git clone https://github.com/hiro-63/TravelSNS.git
 
+# 2. MySQL の準備
+### データベース作成 CREATE DATABASE travel;
+### 必要に応じてユーザー権限を付与
+GRANT ALL PRIVILEGES ON travel.* TO 'root'@'localhost';
+FLUSH PRIVILEGES;
+
+# 3. .env を backend フォルダに作成
+### backend/.env を新規作成し、以下を貼り付けてください。
+### ⚠ 以下はダミー値です。実際の環境に合わせて書き換えてください。
+PORT=5000
+# MySQL Database Configuration
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=your_mysql_password
+DB_NAME=travel
+# JWT Secret
+JWT_SECRET=your_secret_key_here
+# Yahoo API Client ID
+YAHOO_CLIENT_ID=your_yahoo_client_id_here
+
+# 4. バックエンドのセットアップ
+cd backend
+npm install
+npm run dev
+
+# 5. フロントエンドのセットアップ
+cd frontend
+npm install
+npm start
 
 ---
 
