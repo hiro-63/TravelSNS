@@ -1,21 +1,54 @@
-TravelSNS 旅行の思い出を 地図 × 写真 × コメント で共有できる Web SNS アプリ
+# TravelSNS（開発中）
 
-プロジェクト概要 TravelSNS は、旅行先で撮影した写真・コメント・位置情報を投稿し、 地図上で旅の記録を共有できる Web アプリケーションです。
+このアプリは「旅のルート・写真・思い出を共有する SNS」です。  
+現在は **ログイン・新規登録・投稿機能のみ動作**しています。  
+その他の機能は順次開発予定です。
 
-・React によるモダンな UI ・Leaflet を使った地図表示 ・Node.js（Express）＋ MySQL（Sequelize）による API サーバー ・認証は JWT を想定
+---
 
-旅行の思い出を視覚的に残し、他のユーザーと共有できるサービスを目指しています。
+##  開発状況（Progress）
 
-使用技術（Tech Stack） フロントエンド 分類 技術 フレームワーク React / react-router-dom スタイリング Tailwind CSS HTTP クライアント Axios 地図表示 Leaflet / react-leaflet 状態管理 React Context（AuthContext） バックエンド 分類 技術 ランタイム Node.js フレームワーク Express ORM Sequelize データベース MySQL 認証 JWT（想定）
+###  完成済み
+- ユーザー登録
+- ログイン
+- 投稿作成（画像アップロード対応）
 
-ディレクトリ構成 フロントエンド（frontend/src/） コード src/ ├── pages/ # 各画面 ├── components/ # UIパーツ ├── layout/ # ルート制御 ├── context/ # 認証状態管理 ├── api/ # API 通信 └── App.js # ルーティング
+###  開発中
+- プロフィール編集
+- 投稿検索
+- タグ機能
+- おすすめ投稿
+- コメント機能
+- 通知機能
 
-バックエンド（backend/src/） コード src/ ├── route/ # 各種ルート ├── models/ # DB モデル ├── config/ # DB 設定 └── server.js # エントリーポイント
+---
 
-src/ ├── route/ # 各種ルート ├── models/ # DB モデル ├── config/ # DB 設定 └── server.js # エントリーポイント
+## 🧪 現在動作する API
 
-主な機能 ・ログイン / 新規登録 ・投稿（写真・コメント・位置情報） ・地図表示（Leaflet） ・住所検索（Nominatim API） ・投稿一覧 / 検索 / プロフィール表示
+- `POST /api/auth/register` – 新規登録  
+- `POST /api/auth/login` – ログイン  
+- `POST /api/posts` – 投稿作成  
 
-実行方法 リポジトリ取得 コード git clone https://github.com/hiro-63/TravelSNS.git フロントエンド コード cd frontend npm install npm start バックエンド コード cd backend npm install npm run dev MySQL コード CREATE DATABASE travelsns; .env 例 コード DB_HOST=localhost DB_USER=your_username DB_PASSWORD=your_password DB_NAME=travelsns JWT_SECRET=your_secret_key
+---
 
-今後の改善予定 ・投稿への「いいね」機能 ・コメント機能 ・プロフィール編集機能 ・投稿編集・削除の強化 ・UI のアニメーション追加
+## 🚀 セットアップ方法
+
+
+
+---
+
+## 🗺 今後のロードマップ
+
+- [ ] プロフィール編集  
+- [ ] 投稿検索  
+- [ ] タグ機能  
+- [ ] ルート検索  
+- [ ] おすすめ投稿  
+- [ ] コメント機能  
+- [ ] 通知機能  
+- [ ] デプロイ  
+
+---
+
+## 📝 注意事項
+このプロジェクトは開発中のため、予告なく仕様が変更される場合があります。
