@@ -57,14 +57,14 @@ JWT_SECRET=your_secret_key_here
 YAHOO_CLIENT_ID=your_yahoo_client_id_here
 
 ### 4. バックエンドのセットアップ
-cd backend
-npm install
-npm run dev
+##### cd backend
+##### npm install
+##### npm run dev
 
 ### 5. フロントエンドのセットアップ
-cd frontend
-npm install
-npm start
+#####cd frontend
+##### npm install
+##### npm start
 
 ---
 
