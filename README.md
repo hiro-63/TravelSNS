@@ -62,7 +62,7 @@ YAHOO_CLIENT_ID=your_yahoo_client_id_here
 ##### npm run dev
 
 ### 5. フロントエンドのセットアップ
-#####cd frontend
+##### cd frontend
 ##### npm install
 ##### npm start
 
